@@ -1,38 +1,131 @@
+/* General Page Styling */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background: #f4f4f9;
 }
 
 header {
   background: #333;
   color: white;
-  padding: 10px;
+  padding: 15px;
+  text-align: center;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 15px;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin: 10px 0;
 }
 
 nav a {
   color: white;
   text-decoration: none;
+  font-weight: bold;
 }
 
-.btn {
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Universal Button Styling */
+button, .btn, .menu-btn {
   display: inline-block;
-  padding: 10px 15px;
+  padding: 12px 18px;
   background: #007bff;
   color: white;
   text-decoration: none;
-  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
+button:hover, .btn:hover, .menu-btn:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+button:active, .btn:active, .menu-btn:active {
+  background: #004080;
+  transform: scale(0.98);
+}
+
+/* Menu Page Buttons */
+.menu-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.menu-btn {
+  width: 240px;
+  text-align: center;
+}
+
+/* Laptop Cards */
 .laptop-card {
   border: 1px solid #ccc;
   padding: 15px;
   margin: 15px;
+  width: 260px;
   display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
 }
+
+.laptop-card img {
+  width: 220px;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.laptop-card h3 {
+  margin: 10px 0;
+  color: #333;
+}
+
+.laptop-card p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* About Page Sections */
+.about-section {
+  margin: 20px;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 1px 1px 6px rgba(0,0,0,0.1);
+}
+
+.about-section h2 {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.about-section p, .about-section ul {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.about-section ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+ 
+
