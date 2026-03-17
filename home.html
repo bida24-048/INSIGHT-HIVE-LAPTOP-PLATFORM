@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>GORATA AND LESLY'S LOVE HUB💕</title>
+  <title>INSIGHT HIVE LAPTOPS PLATFORMS</title>
   <style>
     body { 
       font-family: Arial, sans-serif; 
@@ -69,7 +69,7 @@
     }
 
     /* Highlight the Vault button */
-    a[href="vault.html"] {
+    a[href="form.html"] {
       background: #e60000;
       box-shadow: 0 0 15px rgba(230, 0, 0, 0.6);
     }
@@ -102,19 +102,16 @@
 </head>
 <body>
   <div class="container">
-    <h1>GORATA AND LESLY'S LOVE SPACE💖</h1>
-    <p>Let’s play, write, and dream together 🌹</p>
+    <h1>Insight hive laptops</h1>
+    <p>Choose, pay deposit and use while paying over time</p>
 
     <!-- Links -->
-    <a href="about.html">OUR LOVE STORY 💑</a>
-    <a href="questions.html">SURVEY💌</a>
-    <a href="memories.html">MEMORIES📸</a>
-    <a href="promise.html">PROMISES💍</a>
-    <a href="song.html">FAVOURITE SONGS🎶</a>
-    <a href="plans.html">PLANS✨</a>
-    <a href="messages.html">MESSAGE WALL💬</a>
-    <a href="vault.html">LOVE VAULT</a>
-
+    <a href="about.html">About Us</a>
+    <a href="cart.html">Cart</a>
+    <a href="Laptops.html">Laptops</a>
+    <a href="form.html">Form</a>
+    <a href="contact.html">Contact us</a>
+   
     <p id="notify"></p>
     <button onclick="logout()">Logout 🔒</button>
   </div>
@@ -124,14 +121,14 @@
     function checkUpdate() {
       if (localStorage.getItem("newUpdate") === "true") {
         document.getElementById("notify").innerText = 
-          "✨ New update added! Check the Vault 💕";
+          "✨ New update added! Check new added laptops";
         localStorage.setItem("newUpdate", "false");
       }
     }
     checkUpdate();
 
     function logout() {
-      localStorage.removeItem("loveLogin");
+      localStorage.removeItem("cart");
       window.location.href = "index.html";
     }
   </script>
