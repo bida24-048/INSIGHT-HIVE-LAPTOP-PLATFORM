@@ -19,27 +19,32 @@
     </nav>
   </header>
 
-  <main>
-    <form id="checkout-form">
-      <label>Name: <input type="text" name="name" required></label><br>
-      <label>Student ID: <input type="text" name="studentid" required></label><br>
-      <label>Email: <input type="email" name="email" required></label><br>
-      <label>Phone: <input type="text" name="phone" required></label><br>
-      <label>Bank Details: <input type="text" name="bank" required></label><br>
-      <button type="submit">Send via WhatsApp</button>
-    </form>
-  </main>
+ <main>
+  <form id="checkout-form">
+    <label>Name: <input type="text" name="name" required></label><br>
+    <label>Student ID: <input type="text" name="studentid" required></label><br>
+    <label>Email: <input type="email" name="email" required></label><br>
+    <label>Phone: <input type="text" name="phone" required></label><br>
+    <label>Bank Details: <input type="text" name="bank" required></label><br>
+    <label>Laptop You Want to Purchase:
+      <input type="text" name="laptop" id="laptop" placeholder="e.g. Dell Inspiron 15" required>
+    </label><br>
+    
+    <button type="submit">Send via WhatsApp</button>
+  </form>
+</main>
 
-  <script>
-    document.getElementById('checkout-form').addEventListener('submit', function(e) {
-      e.preventDefault();
-      const formData = new FormData(this);
-      let message = "Laptop Purchase Request:\n";
-      for (let [key, value] of formData.entries()) {
-        message += `${key}: ${value}\n`;
-      }
-      window.open(`https://wa.me/<YOUR_NUMBER>?text=${encodeURIComponent(message)}`, '_blank');
-    });
-  </script>
+<script>
+  document.getElementById('checkout-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const formData = new FormData(this);
+    let message = "Laptop Purchase Request:\n";
+    for (let [key, value] of formData.entries()) {
+      message += `${key}: ${value}\n`;
+    }
+    // Replace <YOUR_NUMBER> with your WhatsApp business number
+    window.open(`https://wa.me/<78549270>?text=${encodeURIComponent(message)}`, '_blank');
+  });
+</script>
 </body>
 </html>
