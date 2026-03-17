@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Browse Laptops</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="cart.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Browse Laptops</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="browse.html">Browse Laptops</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="form.html">Form</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Laptop 1 -->
+    <div class="laptop-card">
+      <img src="images/dell-inspiron.jpg" alt="Dell Inspiron">
+      <h3>Dell Inspiron 15</h3>
+      <p><strong>Price:</strong> $400</p>
+      <p><strong>Deposit:</strong> $100</p>
+      <p><strong>Installments:</strong> 6 × $50</p>
+      <button onclick="buyNow('Dell Inspiron 15')">Buy Now</button>
+      <button onclick="addToCart('Dell Inspiron 15')">Add to Cart</button>
+    </div>
+
+    <!-- Laptop 2 -->
+    <div class="laptop-card">
+      <img src="images/hp-pavilion.jpg" alt="HP Pavilion">
+      <h3>HP Pavilion 14</h3>
+      <p><strong>Price:</strong> $480</p>
+      <p><strong>Deposit:</strong> $120</p>
+      <p><strong>Installments:</strong> 6 × $60</p>
+      <button onclick="buyNow('HP Pavilion 14')">Buy Now</button>
+      <button onclick="addToCart('HP Pavilion 14')">Add to Cart</button>
+    </div>
+
+    <!-- Laptop 3 -->
+    <div class="laptop-card">
+      <img src="images/lenovo-thinkpad.jpg" alt="Lenovo ThinkPad">
+      <h3>Lenovo ThinkPad E14</h3>
+      <p><strong>Price:</strong> $600</p>
+      <p><strong>Deposit:</strong> $150</p>
+      <p><strong>Installments:</strong> 6 × $75</p>
+      <button onclick="buyNow('Lenovo ThinkPad E14')">Buy Now</button>
+      <button onclick="addToCart('Lenovo ThinkPad E14')">Add to Cart</button>
+    </div>
+
+    <!-- Laptop 4 -->
+    <div class="laptop-card">
+      <img src="images/macbook-air.jpg" alt="MacBook Air">
+      <h3>Apple MacBook Air</h3>
+      <p><strong>Price:</strong> $900</p>
+      <p><strong>Deposit:</strong> $250</p>
+      <p><strong>Installments:</strong> 6 × $108.33</p>
+      <button onclick="buyNow('Apple MacBook Air')">Buy Now</button>
+      <button onclick="addToCart('Apple MacBook Air')">Add to Cart</button>
+    </div>
+  </main>
+</body>
+</html>
